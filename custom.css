@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-wrap: pretty;
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6e6e6;
+  margin: 0;
+  padding: 2.5rem 1.5rem;
+}
+
+.table-container {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 0px 25px 0px 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th,
+td {
+  /* border-right: 1px solid #000000; */
+  padding: 1rem;
+  text-align: start;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* th:hover {
+  background-color: #d7d7d7;
+  cursor: pointer;
+} */
+
+tr:hover {
+  background-color: #acafb4;
+  cursor: pointer;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: start;
+  margin: 0;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+.serial {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+tbody:nth-child(odd) {
+  background-color: #b9c1cc;
+  color: #000000;
+}
+
+tbody:nth-child(even) {
+  background-color: #ccd3db;
+  color: #000000;
+}
+
+
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+@media (width <=576px) {
+  table {
+    width: 95%;
+  }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+@media (width >=577px) and (width <=768px) {
+  table {
+    width: 90%;
+  }
+}
+
+/* Large devices (Laptops, upto 992px and above) */
+@media (width >=769px) and (width <=992px) {
+  table {
+    width: 90%;
+  }
+}
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+@media (width >=993px) and (width <=1200px) {
+  table {
+    width: 80%;
+  }
+}
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+@media (width >=1200px) {
+  /* write code here */
+}
